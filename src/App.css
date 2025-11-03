@@ -1,0 +1,167 @@
+/* ---------- General ---------- */
+body {
+  margin: 0;
+  background-color: #0d0d0d;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- Main Container ---------- */
+.app-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #111;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+/* ---------- Heading ---------- */
+h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* ---------- Form Section ---------- */
+.form-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-section input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #333;
+  background-color: #1b1b1b;
+  border-radius: 8px;
+  color: #eee;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-section input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.5);
+}
+
+.add-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #2563eb;
+}
+
+/* ---------- Search Section ---------- */
+.search-section {
+  margin-bottom: 25px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #1b1b1b;
+  color: #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.5);
+}
+
+/* ---------- Contact List ---------- */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ---------- Contact Card ---------- */
+.contact-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  border: 1px solid #222;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  background-color: #1f1f1f;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);
+}
+
+/* ---------- Contact Info ---------- */
+.contact-info h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact-info p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* ---------- Buttons ---------- */
+.contact-actions button {
+  margin-left: 8px;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.edit-btn {
+  background-color: #6366f1;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #dc2626;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #4f46e5;
+}
+
+.delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .form-section {
+    flex-direction: column;
+  }
+  .contact-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-actions {
+    margin-top: 10px;
+  }
+}
